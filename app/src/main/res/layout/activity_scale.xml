@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScaleActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark2"
+        android:layout_marginStart="30dp"
+        android:padding="8dp"
+        android:id="@+id/bg1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="30dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:fontFamily="@font/notosans"
+            android:text="@string/scale_of_fate"
+            android:textColor="@color/gray"
+            android:textSize="16dp"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+          android:fontFamily="@font/notosans"
+            android:padding="8dp"
+            android:text="@string/wallet"
+            android:textColor="@color/main"
+            android:textSize="18dp">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/bg_history">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+           app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:id="@+id/game_view"
+        android:background="@drawable/sky"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.00x"
+            android:fontFamily="@font/notosans"
+            android:textSize="40dp"
+            android:textColor="@color/black"
+            android:id="@+id/txt_multiper"
+            android:gravity="center">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00.00"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/txt_profit"
+            android:fontFamily="@font/notosans"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/dark2"
+        android:id="@+id/bg2"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/notosans"
+            android:background="@android:color/transparent"
+            android:hint="Amount"
+            android:id="@+id/edit_amnt"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/btn_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/add" />
+
+        <ImageView
+            android:id="@+id/btn_minus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/minus" />
+
+    </LinearLayout>
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:background="@color/main"
+       android:layout_marginStart="50dp"
+       android:layout_marginEnd="50dp"
+       android:layout_marginTop="10dp"
+       android:text="@string/bet"
+       android:fontFamily="@font/notosans"
+       android:textColor="@color/white"
+       android:id="@+id/btn_bet"/>
+
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

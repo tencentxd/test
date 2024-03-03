@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Test" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorAccent">@color/main</item>
+        <item name="colorPrimary">@color/dark</item>
+        <item name="colorPrimaryDark">@color/dark1</item>
+        <item name="colorControlHighlight">@color/main</item>
+        <item name="colorControlNormal">@color/dark2</item>
+    </style>
+
+    <style name="Theme.Test" parent="Base.Theme.Test" />
+
+    <style name="Theme.Test.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Test.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Test.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

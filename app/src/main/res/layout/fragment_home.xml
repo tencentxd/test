@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark3"
+    tools:context=".fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/dark2"
+           android:gravity="center_vertical"
+           android:id="@+id/toolbar"
+           android:padding="10dp"
+           android:elevation="4dp">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:textSize="14dp"
+               android:text="Gamers Casino"
+               android:textColor="@color/main"
+               />
+           <ImageView
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:src="@drawable/notification"
+               android:scaleType="fitCenter"/>
+           <TextView
+               android:layout_width="6dp"
+               android:layout_height="6dp"
+               android:id="@+id/bgnot"
+               android:translationX="-13dp"
+               android:translationY="-8dp"
+               android:background="@color/main"/>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@color/dark3"
+               android:padding="8dp"
+               android:id="@+id/l_balancebg"
+               android:gravity="center_vertical">
+               <ImageView
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:src="@drawable/wallet"
+                   android:scaleType="fitCenter"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="8dp"
+                   android:id="@+id/txt_bln"
+                   android:text="Balance"
+                   android:textColor="@color/white"
+                   android:textSize="12dp"/>
+           </LinearLayout>
+       </LinearLayout>
+   </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1085162454684",
+    "firebase_url": "https://pocketwise-8479d-default-rtdb.firebaseio.com",
+    "project_id": "pocketwise-8479d",
+    "storage_bucket": "pocketwise-8479d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085162454684:android:2f8278bd52630952cdf759",
+        "android_client_info": {
+          "package_name": "com.example.test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3JVovt8gbED1Ram4frbJlgi_d4TqNVj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

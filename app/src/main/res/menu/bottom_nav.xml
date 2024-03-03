@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <item android:id="@+id/home"
+       android:title="@string/home"
+       android:icon="@drawable/baseline_home_24">
+
+   </item>
+   <item android:id="@+id/casino"
+       android:title="@string/casino"
+       android:icon="@drawable/baseline_casino_24">
+
+
+   </item>
+   <item android:id="@+id/sport"
+       android:title="@string/sports"
+       android:icon="@drawable/order">
+
+   </item>
+   <item android:id="@+id/account"
+       android:title="@string/account"
+       android:icon="@drawable/baseline_account_circle_24">
+
+   </item>
+</menu>
